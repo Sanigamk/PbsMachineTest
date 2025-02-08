@@ -3,23 +3,12 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 10rem;
   padding: 2rem;
-  //   text-align: center;
-  background-color: #f8f9fa;
+  margin-bottom: 10rem;
 }
 
 .service-card {
   background: #fff;
-
-  //   border-radius: 8px;
-  //   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
-
-  //   transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-  }
 
   .icon-container {
     margin-bottom: 1rem;
@@ -31,14 +20,13 @@
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 0.75rem;
-    color: #0056b3;
-    font-weight: 600;
+    font-weight: 400;
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #000000;
     line-height: 1.5;
   }
