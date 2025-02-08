@@ -27,6 +27,7 @@ function Grid() {
             <img src={service.icon} alt={`${service.title} icon`} />
           </div>
           <h3>{service.title}</h3>
+          <div className="yellow-line"></div>
           <p>{service.description}</p>
         </div>
       ))}

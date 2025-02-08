@@ -4,7 +4,9 @@ function PbsFirst() {
   return (
     <section className="about">
       <div className="about-content">
-        <h5>ABOUT US</h5>
+        <h4 className="small-title" style={{ marginBottom: "1rem" }}>
+          <span>AT A GLANCE</span>
+        </h4>
         <h2>Perfect Building Solutions LLP</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas

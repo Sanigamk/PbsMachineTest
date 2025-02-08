@@ -3,14 +3,15 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 2rem;
-  padding: 4rem;
-  background-color: #f8f9fa;
+  height: 50vh;
+  margin-left: 5rem;
   position: relative;
 
   &-content {
+    width: 80%;
     h5 {
       font-size: 1rem;
-      color: #ffc107; /* Accent color */
+      color: #ffc107;
       margin-bottom: 0.5rem;
     }
 
@@ -18,7 +19,7 @@
       font-size: 2rem;
       font-weight: bold;
       margin-bottom: 1rem;
-      color: #246ab9;
+      color: #105689;
     }
 
     p {
@@ -31,7 +32,6 @@
     &-read-more {
       font-size: 1rem;
       padding: 0.75rem 1.5rem;
-
       color: #000000;
       border: none;
       border-radius: 50px;
@@ -54,13 +54,16 @@
 
   &-image-container {
     position: absolute;
-    top: -5rem;
+    top: -3.5rem;
     right: 10rem;
     text-align: center;
-    height: 120%;
+    width: 700px;
+    height: 505px;
 
     img {
       height: 100%;
+      width: 700px;
+      height: 505px;
       border-radius: 10px;
     }
 
@@ -76,4 +79,10 @@
       pointer-events: none;
     }
   }
+}
+.yellow-line {
+  height: 2px;
+  width: 2rem;
+  margin-bottom: 1rem;
+  background-color: #dfa01e;
 }
