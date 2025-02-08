@@ -199,15 +199,14 @@ a {
 }
 .about-image-container {
   position: absolute;
-  top: -3rem;
+  top: -5rem;
   right: 10rem;
   text-align: center;
-  height: 80%;
+  height: 120%;
 }
 .about-image-container img {
   height: 100%;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .about-image-container-overlay {
   position: absolute;
