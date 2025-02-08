@@ -9,6 +9,17 @@
 .services-header {
   text-align: center;
   margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+
+  &-subtitle {
+    color: #dfa01e;
+    font-size: 1rem;
+    font-weight: 300;
+
+    display: inline-block;
+    padding-bottom: 1rem;
+  }
 
   &-title {
     color: #105689;
