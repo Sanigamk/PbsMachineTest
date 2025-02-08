@@ -22,10 +22,6 @@
       background-color: rgb(255, 255, 255);
       height: 10rem;
       padding-top: 3rem;
-      & h2 {
-        font-size: 36px;
-        color: #105689;
-      }
     }
 
     &-body {
@@ -36,6 +32,7 @@
       &-item {
         height: fit-content;
         margin-bottom: 2rem;
+
         & h4 {
           font-size: 3rem;
           font-weight: 400;
@@ -51,6 +48,18 @@
   color: #105689;
 }
 .small-title {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #dfa01e;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.5rem;
+  & div {
+    height: 1px;
+    width: 2rem;
+    background-color: #dfa01e;
+  }
 }
 .line {
   height: 2px;

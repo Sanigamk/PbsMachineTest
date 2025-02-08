@@ -4,7 +4,10 @@ export default function Stats() {
       <div className="stats-img-container"></div>
       <div className="stats-content">
         <div className="stats-content-header">
-          <h4 className="small-title"></h4>
+          <h4 className="small-title">
+            <span>AT A GLANCE</span>
+            <div></div>
+          </h4>
           <h2 className="prime-title">Our Achievements</h2>
         </div>
         <div className="stats-content-body">
