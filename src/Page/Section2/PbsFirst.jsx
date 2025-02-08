@@ -1,8 +1,12 @@
+import pbs from "../../assets/intro-text-tmb/intro-text-tmb.png";
+
 function PbsFirst() {
   return (
     <section className="about">
       <div className="about-content">
-        <h5>ABOUT US</h5>
+        <h4 className="small-title" style={{ marginBottom: "1rem" }}>
+          <span>AT A GLANCE</span>
+        </h4>
         <h2>Perfect Building Solutions LLP</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
@@ -15,8 +19,7 @@ function PbsFirst() {
         </button>
       </div>
       <div className="about-image-container">
-        <div className="about-image-container-overlay">pbs</div>
-        <img src="your-image-path.jpg" alt="About Us Background" />
+        <img src={pbs} alt="About Us Background" />
       </div>
     </section>
   );

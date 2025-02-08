@@ -121,17 +121,13 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10rem;
-  padding: 2rem;
-  background-color: #f8f9fa;
+  padding: 0 5rem;
+  margin-bottom: 10rem;
 }
 
 .service-card {
-  background: #fff;
   padding: 1.5rem;
-}
-.service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  padding-left: 0rem;
 }
 .service-card .icon-container {
   margin-bottom: 1rem;
@@ -141,13 +137,12 @@ a {
   height: 60px;
 }
 .service-card h3 {
-  font-size: 2rem;
-  margin-bottom: 0.75rem;
-  color: #0056b3;
-  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
 }
 .service-card p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #000000;
   line-height: 1.5;
 }
@@ -157,19 +152,23 @@ a {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 2rem;
-  padding: 4rem;
-  background-color: #f8f9fa;
+  height: 50vh;
+  margin-left: 5rem;
+  position: relative;
+}
+.about-content {
+  width: 80%;
 }
 .about-content h5 {
   font-size: 1rem;
-  color: #ffc107; /* Accent color */
+  color: #ffc107;
   margin-bottom: 0.5rem;
 }
 .about-content h2 {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #246ab9;
+  color: #105689;
 }
 .about-content p {
   font-size: 1rem;
@@ -197,14 +196,18 @@ a {
   font-size: 1.25rem;
 }
 .about-image-container {
-  position: relative;
+  position: absolute;
+  top: -3.5rem;
+  right: 10rem;
   text-align: center;
+  width: 700px;
+  height: 505px;
 }
 .about-image-container img {
-  width: 100%;
-  height: auto;
+  height: 100%;
+  width: 700px;
+  height: 505px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .about-image-container-overlay {
   position: absolute;
@@ -218,66 +221,49 @@ a {
   pointer-events: none;
 }
 
+.yellow-line {
+  height: 2px;
+  width: 2rem;
+  margin-bottom: 1rem;
+  background-color: #dfa01e;
+}
+
 .services-section {
-  padding: 4rem 2rem;
-  max-width: 1200px;
+  padding: 5rem;
+  width: 100%;
+  height: fit-content;
   margin: 0 auto;
+  font-size: 1.2rem;
 }
 
 .services-header {
   text-align: center;
   margin-bottom: 3rem;
 }
-.services-header-subtitle {
-  display: block;
-  color: #f59e0b;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 0.875rem;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.5rem;
-}
 .services-header-title {
-  color: #1e3a8a;
+  color: #105689;
   font-size: 2rem;
   font-weight: 700;
-  position: relative;
   display: inline-block;
   padding-bottom: 1rem;
-}
-.services-header-title:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 2px;
-  background-color: #f59e0b;
 }
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
 }
 
 .services-item {
   background: #fff;
-  padding: 2rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-.services-item:hover {
-  transform: translateY(-5px);
-}
-.services-item--highlighted {
-  background: #1e3a8a;
-  color: white;
-}
-.services-item--highlighted .services-item-title {
-  color: white;
+  padding: 3rem;
+  border: 1px solid #d9e8f2;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 .services-item--highlighted .services-item-description {
   color: rgba(255, 255, 255, 0.9);
@@ -292,15 +278,14 @@ a {
   margin-bottom: 1rem;
 }
 .services-item-title {
-  font-size: 1.25rem;
-  color: #1e3a8a;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 .services-item-description {
   color: #64748b;
-  line-height: 1.6;
-  font-size: 0.95rem;
+  line-height: 1.4;
+  font-size: 1.2rem;
 }
 
 .services-cta {
@@ -313,10 +298,11 @@ a {
   justify-content: space-between;
 }
 .services-cta-title {
-  color: #1e3a8a;
+  color: #dfa01e;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
   line-height: 1.4;
+  font-weight: 400;
 }
 .services-cta-button {
   display: inline-flex;
@@ -324,8 +310,7 @@ a {
   gap: 0.5rem;
   background: none;
   border: none;
-  color: #f59e0b;
-  font-weight: 600;
+  color: #dfa01e;
   cursor: pointer;
   padding: 0;
   transition: gap 0.3s ease;
@@ -340,20 +325,6 @@ a {
   transform: translateX(5px);
 }
 
-@media (max-width: 768px) {
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-  .services-section {
-    padding: 2rem 1rem;
-  }
-  .services-item {
-    padding: 1.5rem;
-  }
-  .services-header-title {
-    font-size: 1.75rem;
-  }
-}
 .footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -448,7 +419,6 @@ a {
   font-size: 2.5rem;
   letter-spacing: 0.3rem;
   width: 50rem;
-  padding: 1rem;
   font-weight: 100;
 }
 
