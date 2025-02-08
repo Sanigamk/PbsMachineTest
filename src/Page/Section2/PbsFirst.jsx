@@ -1,3 +1,5 @@
+import pbs from "../../assets/intro-text-tmb/intro-text-tmb.png";
+
 function PbsFirst() {
   return (
     <section className="about">
@@ -15,8 +17,7 @@ function PbsFirst() {
         </button>
       </div>
       <div className="about-image-container">
-        <div className="about-image-container-overlay">pbs</div>
-        <img src="your-image-path.jpg" alt="About Us Background" />
+        <img src={pbs} alt="About Us Background" />
       </div>
     </section>
   );
