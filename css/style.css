@@ -104,7 +104,7 @@
 .service-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 10rem;
   padding: 2rem;
   background-color: #f8f9fa;
 }
@@ -125,13 +125,13 @@
   height: 60px;
 }
 .service-card h3 {
-  font-size: 1.25rem;
+  font-size: 2rem;
   margin-bottom: 0.75rem;
   color: #0056b3;
   font-weight: 600;
 }
 .service-card p {
-  font-size: 0.95rem;
+  font-size: 1.5rem;
   color: #000000;
   line-height: 1.5;
 }
@@ -336,6 +336,64 @@
   .services-header-title {
     font-size: 1.75rem;
   }
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10rem;
+  background-color: #003366;
+  color: #fff;
+  padding: 2rem;
+}
+.footer-section h4 {
+  font-size: 2rem;
+  color: #ffc107;
+  margin-bottom: 1rem;
+}
+.footer-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.footer-section a {
+  color: #ffc107;
+  text-decoration: none;
+}
+.footer-section a:hover {
+  text-decoration: underline;
+}
+.footer-section-about-us .footer-read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+.footer-section-useful-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-section-useful-links ul li {
+  margin-bottom: 0.5rem;
+}
+.footer-section-useful-links ul li a {
+  font-size: 0.9rem;
+}
+.footer-section-connect-us p {
+  margin-bottom: 0.5rem;
+}
+.footer-section-connect-us p a {
+  font-size: 0.9rem;
+}
+.footer-section-gallery .footer-gallery-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+.footer-section-gallery .footer-gallery-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */

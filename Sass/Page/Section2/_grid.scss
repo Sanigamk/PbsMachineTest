@@ -1,7 +1,7 @@
 .service-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 10rem;
   padding: 2rem;
   //   text-align: center;
   background-color: #f8f9fa;
@@ -9,9 +9,11 @@
 
 .service-card {
   background: #fff;
+
   //   border-radius: 8px;
   //   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
+
   //   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
@@ -29,14 +31,14 @@
   }
 
   h3 {
-    font-size: 1.25rem;
+    font-size: 2rem;
     margin-bottom: 0.75rem;
     color: #0056b3;
     font-weight: 600;
   }
 
   p {
-    font-size: 0.95rem;
+    font-size: 1.5rem;
     color: #000000;
     line-height: 1.5;
   }

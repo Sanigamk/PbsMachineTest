@@ -1,0 +1,80 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10rem;
+  background-color: #003366;
+  color: #fff;
+  padding: 2rem;
+
+  &-section {
+    h4 {
+      font-size: 2rem;
+      color: #ffc107;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: #ffc107;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &-about-us {
+      .footer-read-more {
+        display: inline-block;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+      }
+    }
+
+    &-useful-links {
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 0.5rem;
+
+          a {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+
+    &-connect-us {
+      p {
+        margin-bottom: 0.5rem;
+
+        a {
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    &-gallery {
+      .footer-gallery-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 5px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+}
