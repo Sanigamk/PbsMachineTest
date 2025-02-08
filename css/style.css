@@ -421,6 +421,41 @@ a {
   height: 3rem;
   background-color: white;
 }
+.hero-content {
+  height: 77vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../../src/assets/bnr-01/bnr-01.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.hero-content-text {
+  position: absolute;
+  bottom: 5rem;
+  left: 5rem;
+  color: white;
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+  width: 50rem;
+  padding: 1rem;
+  font-weight: 100;
+}
+
+.logo {
+  padding: 0.5rem;
+  height: 5rem;
+  width: fit-content;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 5rem;
+  background-color: white;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
 .stats {
   height: 30rem;
