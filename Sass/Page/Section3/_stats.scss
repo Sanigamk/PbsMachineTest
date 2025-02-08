@@ -1,0 +1,33 @@
+.stats {
+  height: 25rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  width: 90%;
+  &-img-container {
+    border-top-right-radius: 15rem;
+    background-color: yellow;
+  }
+
+  &-content {
+    background-color: green;
+
+    &-header {
+      background-color: rgb(255, 255, 255);
+      height: 5rem;
+    }
+
+    &-body {
+      background-color: red;
+      height: calc(100% - 5rem);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+
+      &-item {
+        background-color: blue;
+        height: 100%;
+      }
+    }
+  }
+}
