@@ -1,33 +1,59 @@
 .stats {
-  height: 25rem;
+  height: 30rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 4rem;
   overflow: hidden;
   width: 90%;
   &-img-container {
     border-top-right-radius: 15rem;
-    background-color: yellow;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url("../../../src/assets/intro-tmb/intro-tmb.png");
+    background-size: cover;
+    background-position: center;
   }
 
   &-content {
-    background-color: green;
-
     &-header {
       background-color: rgb(255, 255, 255);
-      height: 5rem;
+      height: 10rem;
+      padding-top: 3rem;
+      & h2 {
+        font-size: 36px;
+        color: #105689;
+      }
     }
 
     &-body {
-      background-color: red;
-      height: calc(100% - 5rem);
+      height: fit-content;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
-
       &-item {
-        background-color: blue;
-        height: 100%;
+        height: fit-content;
+        margin-bottom: 2rem;
+        & h4 {
+          font-size: 3rem;
+          font-weight: 400;
+          letter-spacing: 0.3rem;
+          color: #dfa01e;
+        }
       }
     }
   }
+}
+.prime-title {
+  font-size: 36px;
+  color: #105689;
+}
+.small-title {
+}
+.line {
+  height: 2px;
+  background-color: #105689;
+  margin: 1rem 0;
 }
