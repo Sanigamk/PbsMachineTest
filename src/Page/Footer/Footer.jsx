@@ -67,6 +67,11 @@ const Footer = () => {
           <img src="image2.jpg" alt="Gallery Image 2" />
           <img src="image3.jpg" alt="Gallery Image 3" />
           <img src="image4.jpg" alt="Gallery Image 4" />
+          <img src="image3.jpg" alt="Gallery Image 5" />
+          <img src="image4.jpg" alt="Gallery Image 6" />
+          <img src="image3.jpg" alt="Gallery Image 7" />
+          <img src="image4.jpg" alt="Gallery Image 8" />
+          <img src="image4.jpg" alt="Gallery Image 9" />
         </div>
       </div>
     </footer>
