@@ -353,6 +353,65 @@ a {
     font-size: 1.75rem;
   }
 }
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10rem;
+  background-color: #003366;
+  color: #fff;
+  padding: 2rem;
+}
+.footer-section h4 {
+  font-size: 2rem;
+  color: #ffc107;
+  margin-bottom: 1rem;
+}
+.footer-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.footer-section a {
+  color: #ffc107;
+  text-decoration: none;
+}
+.footer-section a:hover {
+  text-decoration: underline;
+}
+.footer-section-about-us .footer-read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+.footer-section-useful-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-section-useful-links ul li {
+  margin-bottom: 0.5rem;
+}
+.footer-section-useful-links ul li a {
+  font-size: 0.9rem;
+}
+.footer-section-connect-us p {
+  margin-bottom: 0.5rem;
+}
+.footer-section-connect-us p a {
+  font-size: 0.9rem;
+}
+.footer-section-gallery .footer-gallery-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+.footer-section-gallery .footer-gallery-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 .hero {
   height: 80vh;
   background-color: blue;
@@ -372,12 +431,7 @@ a {
 }
 .stats-img-container {
   border-top-right-radius: 15rem;
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.1),
-      rgba(0, 0, 0, 0.2)
-    ),
-    url("../../../src/assets/intro-tmb/intro-tmb.png");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("../../../src/assets/intro-tmb/intro-tmb.png");
   background-size: cover;
   background-position: center;
 }
