@@ -1,19 +1,16 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-
 import Whypbs from "./Page/Section6/Whypbs";
-import Grid from "./Page/Section2/Grid";
 import About from "./Page/Section2/About";
 import OurService from "./Page/Section4/OurService";
+import Hero from "./Page/Hero/Hero";
+import Stats from "./Page/Section3/Stats";
 import Footer from "./Page/Footer/Footer";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
+      <Hero />
       <About />
+      <Stats />
       <OurService />
       <Whypbs />
       <Footer />

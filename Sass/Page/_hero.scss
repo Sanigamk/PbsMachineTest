@@ -1,0 +1,9 @@
+.hero {
+  height: 80vh;
+  background-color: blue;
+
+  &-header {
+    height: 3rem;
+    background-color: white;
+  }
+}
