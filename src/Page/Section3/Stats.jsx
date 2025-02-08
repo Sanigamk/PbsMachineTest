@@ -8,7 +8,7 @@ export default function Stats() {
             <span>AT A GLANCE</span>
             <div></div>
           </h4>
-          <h2 className="prime-title">Our Achievements</h2>
+          <h2 className="prime-title">Building with excellence</h2>
         </div>
         <div className="stats-content-body">
           <div className="stats-content-body-item">
