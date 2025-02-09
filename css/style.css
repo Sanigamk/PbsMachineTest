@@ -257,9 +257,6 @@ a {
   fill: white;
 }
 .services-item-icon {
-  width: 3rem;
-  height: 3rem;
-  fill: #1e3a8a;
   margin-bottom: 1rem;
 }
 .services-item-title {
@@ -404,6 +401,19 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.hero-header-meadia {
+  display: flex;
+  gap: 3px;
+}
+.hero-header-meadia-social {
+  background-color: #d9e8f2;
+  top: 0px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .hero-content {
   height: 77vh;
