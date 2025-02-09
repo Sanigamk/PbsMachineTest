@@ -438,6 +438,30 @@ a {
   font-size: 1.2rem;
 }
 
+.footer-bottom {
+  background-color: #003358;
+  color: #fff;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 4.5rem;
+}
+.footer-bottom-copyright {
+  margin-right: 1rem;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+.footer-bottom-develop {
+  display: flex;
+  align-items: center;
+}
+.footer-bottom-develop p {
+  font-size: 14px;
+  margin-right: 1rem;
+  font-weight: 300;
+}
 .hero {
   height: 80vh;
   background-color: blue;

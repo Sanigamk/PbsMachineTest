@@ -150,3 +150,34 @@
     }
   }
 }
+
+.footer-bottom {
+  background-color: #003358;
+  color: #fff;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 4.5rem;
+
+  &-copyright {
+    margin-right: 1rem;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  &-develop {
+    display: flex;
+    align-items: center;
+    p {
+      font-size: 14px;
+      margin-right: 1rem;
+      font-weight: 300;
+    }
+    img {
+      // width: 100px;
+      // height: 100px;
+    }
+  }
+}

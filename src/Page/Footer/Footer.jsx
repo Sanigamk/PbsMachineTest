@@ -5,6 +5,10 @@ import image3 from "../../assets/03@2x.png";
 import image4 from "../../assets/04@2x.png";
 import image5 from "../../assets/05@2x.png";
 import image6 from "../../assets/06@2x.png";
+import logo from "../../assets/logosesame.png";
+import location from "../../assets/house-solid.svg";
+import phone from "../../assets/phone-solid.svg";
+import email from "../../assets/envelope-solid.svg";
 
 const Footer = () => {
   return (
@@ -68,12 +72,15 @@ const Footer = () => {
         <div className="footer-section footer-section-connect-us">
           <h4>Connect Us</h4>
           <p>
-            Akshya Nagar 1st Block 1st Cross, Ramamurthy Nagar, Calicut - 560016
+            <img src={location} alt="location" width={20} /> Akshya Nagar 1st
+            Block 1st Cross, Ramamurthy Nagar, Calicut - 560016
           </p>
           <p>
+            <img src={phone} alt="location" width={20} />
             <a href="tel:+919544491312">+91 9544 491 312</a>
           </p>
           <p>
+            <img src={email} alt="location" width={20} />{" "}
             <a href="mailto:info@perfectbuildingsolutions.in">
               info@perfectbuildingsolutions.in
             </a>
@@ -93,6 +100,14 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+      <div className="footer-bottom">
+        <p className="footer-bottom-copyright">
+          Copyright © 2024 Perfect Building Solutions. All rights reserved.
+        </p>
+        <div className="footer-bottom-develop">
+          <p>Website developed by</p> <img src={logo} alt="sesame" width={70} />
+        </div>
+      </div>
     </>
   );
 };
