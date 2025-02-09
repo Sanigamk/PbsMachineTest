@@ -1,7 +1,11 @@
 export default function Stats() {
   return (
     <div className="stats">
-      <div className="stats-img-container"></div>
+      <div className="stats-img-container">
+        <div className="play-button">
+          <div className="play-icon"></div>
+        </div>
+      </div>
       <div className="stats-content">
         <div className="stats-content-header">
           <h4 className="small-title">
