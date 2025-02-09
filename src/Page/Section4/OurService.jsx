@@ -181,7 +181,7 @@ function OurService() {
                   }
             }
           >
-            {service.icon}
+            <div className="services-item-icon">{service.icon}</div>
             <h3 className="services-item-title">{service.title}</h3>
             <p className="services-item-description">{service.description}</p>
           </div>
