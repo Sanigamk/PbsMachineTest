@@ -54,6 +54,23 @@
     }
   }
 
+  &-place {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+
+    &-buildname {
+      color: #105689;
+      font-weight: 500;
+    }
+
+    &-location {
+      display: flex;
+      gap: 0.5rem;
+    }
+  }
+
   &-blue-box {
     position: absolute;
     top: 0;

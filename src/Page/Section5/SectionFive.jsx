@@ -19,9 +19,13 @@ export default function SectionFive() {
           </button>
         </div>
         <div className="section-five-content-body">
-          <SwiperItem img={img1} />
-          <SwiperItem img={img2} />
-          <SwiperItem img={img3} />
+          <SwiperItem img={img1} location="Kozhikkod" title="Eiffel Complex" />
+          <SwiperItem
+            img={img2}
+            location="Eranakulam"
+            title="Electronic City"
+          />
+          <SwiperItem img={img3} location="Wayanad" title="Cabin wood" />
         </div>
       </div>
     </div>
