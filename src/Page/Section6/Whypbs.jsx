@@ -51,12 +51,7 @@ function Whypbs() {
           ))}
         </div>
       </div>
-      <div className="building-services-image">
-        {/* <img
-          src="/construction-site.jpg"
-          alt="Construction site with cranes and building structure"
-        /> */}
-      </div>
+      <div className="building-services-image"></div>
     </div>
   );
 }

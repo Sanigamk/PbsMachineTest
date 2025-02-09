@@ -590,9 +590,15 @@ a {
   height: 77vh;
   overflow: hidden;
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
+  z-index: 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.swiper-img .swiper {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .swiper-img img {
   width: 100%;
@@ -614,6 +620,12 @@ a {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+/* Add this to your CSS file */
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+  color: #777777 !important; /* Use !important if necessary */
 }
 
 .stats {
@@ -706,10 +718,7 @@ a {
   background-color: transparent;
   position: relative;
   z-index: 20;
-  padding: 0 10rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  padding: 0 5rem !important;
 }
 .section-five-content-body-item {
   height: 100%;
@@ -754,6 +763,10 @@ a {
   color: white;
   font-size: 2.2rem;
   font-weight: 600;
+}
+
+.swiper-two {
+  padding: 0 5rem !important;
 }
 
 .nav {
