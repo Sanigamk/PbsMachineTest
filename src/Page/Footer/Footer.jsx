@@ -1,4 +1,11 @@
 import { MdArrowOutward } from "react-icons/md";
+import image1 from "../../assets/01@2x.png";
+import image2 from "../../assets/02@2x.png";
+import image3 from "../../assets/03@2x.png";
+import image4 from "../../assets/04@2x.png";
+import image5 from "../../assets/05@2x.png";
+import image6 from "../../assets/06@2x.png";
+
 const Footer = () => {
   return (
     <>
@@ -77,15 +84,12 @@ const Footer = () => {
         <div className="footer-section footer-section-gallery">
           <h4>Gallery</h4>
           <div className="footer-gallery-images">
-            <img src="image1.jpg" alt="Gallery Image 1" />
-            <img src="image2.jpg" alt="Gallery Image 2" />
-            <img src="image3.jpg" alt="Gallery Image 3" />
-            <img src="image4.jpg" alt="Gallery Image 4" />
-            <img src="image3.jpg" alt="Gallery Image 5" />
-            <img src="image4.jpg" alt="Gallery Image 6" />
-            <img src="image3.jpg" alt="Gallery Image 7" />
-            <img src="image4.jpg" alt="Gallery Image 8" />
-            <img src="image4.jpg" alt="Gallery Image 9" />
+            <img src={image1} alt="Gallery Image 1" />
+            <img src={image2} alt="Gallery Image 2" />
+            <img src={image3} alt="Gallery Image 3" />
+            <img src={image4} alt="Gallery Image 4" />
+            <img src={image5} alt="Gallery Image 5" />
+            <img src={image6} alt="Gallery Image 6" />
           </div>
         </div>
       </footer>
