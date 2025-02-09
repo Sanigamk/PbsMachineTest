@@ -1,3 +1,6 @@
+import { GoHorizontalRule } from "react-icons/go";
+import check from "../../assets/check-solid.svg";
+
 function Whypbs() {
   const services = [
     {
@@ -24,7 +27,9 @@ function Whypbs() {
   return (
     <div className="building-services">
       <div className="building-services-content">
-        <div className="building-services-content-subtitle">WHY US?</div>
+        <div className="building-services-content-subtitle">
+          WHY PBS <div></div>
+        </div>
         <h2 className="building-services-content-title">
           We building the best
         </h2>
@@ -38,19 +43,7 @@ function Whypbs() {
               key={service.id}
               className="building-services-content-services-item"
             >
-              <svg
-                className="building-services-content-services-item-icon"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
+              <img src={check} alt={service.title} />
               <span className="building-services-content-services-item-text">
                 {service.title}
               </span>

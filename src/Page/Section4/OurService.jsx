@@ -165,21 +165,14 @@ function OurService() {
           <div
             key={service.id}
             className={`services-item`}
-            onMouseEnter={() => setHoveredIndex(index)}
-            onMouseLeave={() => setHoveredIndex(null)}
-            style={
-              hoveredIndex === index
-                ? {
-                    backgroundImage: `url(${service?.image})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                  }
-                : {
-                    backgroundImage: `url(${service?.image})`,
-                    backgroundSize: "0%",
-                    backgroundPosition: "center",
-                  }
-            }
+            // onMouseEnter={() => setHoveredIndex(index)}
+            // onMouseLeave={() => setHoveredIndex(null)}
+            // style={{
+            //   backgroundImage: `url(${service?.image})`,
+            //   backgroundSize: hoveredIndex === index ? "cover" : "0%",
+            //   backgroundPosition: "center",
+            //   transition: "background-size 0.3s ease-in-out",
+            // }}
           >
             <div className="services-item-icon">{service.icon}</div>
             <h3 className="services-item-title">{service.title}</h3>
