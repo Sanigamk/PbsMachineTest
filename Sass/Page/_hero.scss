@@ -5,6 +5,25 @@
   &-header {
     height: 3rem;
     background-color: white;
+    padding: 0rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    &-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      &-contact {
+        display: flex;
+        gap: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
   }
 
   &-content {

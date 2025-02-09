@@ -1,19 +1,22 @@
+import icon1 from "./../../assets/commercial.png";
+import icon2 from "./../../assets/residential.svg";
+import icon3 from "./../../assets/civil-infrastructure.svg";
 function Grid() {
   const services = [
     {
-      icon: "🏢", // Replace with your icon or SVG
+      icon: icon1,
       title: "Commercial",
       description:
         "Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.",
     },
     {
-      icon: "🏠", // Replace with your icon or SVG
+      icon: icon2,
       title: "Residential",
       description:
         "Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.",
     },
     {
-      icon: "🌉", // Replace with your icon or SVG
+      icon: icon3,
       title: "Civil Infrastructure",
       description:
         "Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.",

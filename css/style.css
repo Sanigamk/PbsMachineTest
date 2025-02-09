@@ -387,6 +387,23 @@ a {
 .hero-header {
   height: 3rem;
   background-color: white;
+  padding: 0rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.hero-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.hero-header-container-contact {
+  display: flex;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .hero-content {
   height: 77vh;
