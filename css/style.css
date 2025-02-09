@@ -122,6 +122,30 @@ a {
   line-height: 1.5;
 }
 
+.icon-container {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+.icon-container::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #d9ecff;
+  border-radius: 50%;
+  top: -10px;
+  left: -10px;
+  z-index: -1;
+}
+
+.icon-container img {
+  width: 100%;
+  height: auto;
+}
+
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
