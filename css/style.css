@@ -248,13 +248,7 @@ a {
   justify-content: center;
   flex-direction: column;
   cursor: pointer;
-  transition: all 0.3s ease;
-}
-.services-item--highlighted .services-item-description {
-  color: rgba(255, 255, 255, 0.9);
-}
-.services-item--highlighted .services-item-icon {
-  fill: white;
+  transition: all 1s ease-in-out;
 }
 .services-item-icon {
   margin-bottom: 1rem;
@@ -268,6 +262,13 @@ a {
   color: #64748b;
   line-height: 1.4;
   font-size: 1.2rem;
+}
+.services-item:hover {
+  background: linear-gradient(rgba(16, 86, 137, 0.9), rgba(16, 86, 137, 0.9)), url("../../../src/assets/project-01/project-01.png");
+  color: white;
+}
+.services-item:hover .services-item-description {
+  color: white;
 }
 
 .services-cta {
@@ -662,10 +663,15 @@ a {
   top: 0;
   left: 0;
   height: 50%;
-  width: 40rem;
+  width: 50rem;
   background-color: #105689;
   padding-left: 10rem;
   padding-top: 3rem;
+}
+.section-five-blue-box h2 {
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */

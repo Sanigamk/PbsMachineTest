@@ -105,7 +105,7 @@ const Footer = () => {
           Copyright © 2024 Perfect Building Solutions. All rights reserved.
         </p>
         <div className="footer-bottom-develop">
-          <p>Website developed by</p> <img src={logo} alt="sesame" width={70} />
+          <p>Website developed by Saniga</p>
         </div>
       </div>
     </>

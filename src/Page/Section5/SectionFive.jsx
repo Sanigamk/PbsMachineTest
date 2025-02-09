@@ -8,7 +8,7 @@ export default function SectionFive() {
     <div className="section-five">
       <div className="section-five-blue-box">
         <h4 className="small-title">
-          <span>AT A GLANCE</span>
+          <span>OUR PROJECTS</span>
         </h4>
         <h2 style={{ color: "white" }}>Your Trusted Construction Partner</h2>
       </div>
