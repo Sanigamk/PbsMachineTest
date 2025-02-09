@@ -4,6 +4,7 @@ import OurService from "./Page/Section4/OurService";
 import Hero from "./Page/Hero/Hero";
 import Stats from "./Page/Section3/Stats";
 import Footer from "./Page/Footer/Footer";
+import SectionFive from "./Page/Section5/SectionFive";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <About />
       <Stats />
       <OurService />
+      <SectionFive />
       <Whypbs />
       <Footer />
     </>
