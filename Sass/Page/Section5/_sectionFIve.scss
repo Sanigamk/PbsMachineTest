@@ -27,10 +27,7 @@
       background-color: transparent;
       position: relative;
       z-index: 20;
-      padding: 0 10rem;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
+      padding: 0 5rem !important;
 
       &-item {
         height: 100%;
@@ -86,3 +83,23 @@
     }
   }
 }
+.swiper-two {
+  padding: 0 5rem !important;
+}
+// /* Add this to your CSS file or within a <style> tag in your component */
+// .swiper-two .swiper-button-next,
+// .swiper-two .swiper-button-prev {
+//   color: #dfa01e; /* Change the color of the buttons */
+//   background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+//   border-radius: 50%; /* Make the buttons circular */
+//   width: 40px; /* Set the width */
+//   height: 40px; /* Set the height */
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// .swiper-two .swiper-button-next:hover,
+// .swiper-two .swiper-button-prev:hover {
+//   background-color: rgba(0, 0, 0, 0.8); /* Darken the background on hover */
+// }

@@ -1,3 +1,7 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 import img1 from "../../assets/project-01/project-01.png";
 import img2 from "../../assets/project-02/project-01.png";
 import img3 from "../../assets/project-03/project-03.png";
@@ -34,13 +38,38 @@ export default function SectionFive() {
           </button>
         </div>
         <div className="section-five-content-body">
-          <SwiperItem img={img1} location="Kozhikkod" title="Eiffel Complex" />
-          <SwiperItem
-            img={img2}
-            location="Eranakulam"
-            title="Electronic City"
-          />
-          <SwiperItem img={img3} location="Wayanad" title="Cabin wood" />
+          <Swiper
+            modules={[Navigation]}
+            spaceBetween={80}
+            slidesPerView={3}
+            navigation={true}
+            className="swiper-two"
+          >
+            <SwiperSlide>
+              <SwiperItem
+                img={img1}
+                location="Kozhikkod"
+                title="Eiffel Complex"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SwiperItem img={img3} location="Wayanad" title="Cabin wood" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SwiperItem
+                img={img2}
+                location="Eranakulam"
+                title="Electronic City"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SwiperItem
+                img={img2}
+                location="Eranakulam"
+                title="Electronic City"
+              />
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
     </div>

@@ -27,6 +27,7 @@
     &-meadia {
       display: flex;
       gap: 3px;
+
       &-social {
         background-color: #d9e8f2;
         top: 0px;
@@ -41,26 +42,45 @@
 
   &-content {
     height: 77vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
-      url("../../src/assets/bnr-01/bnr-01.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     position: relative;
+    overflow: hidden;
 
     &-text {
       position: absolute;
       bottom: 5rem;
-      left: 5rem;
+      left: 8rem;
       color: white;
       font-size: 2.5rem;
       letter-spacing: 0.3rem;
       width: 50rem;
-
       font-weight: 100;
     }
   }
 }
+.swiper-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 77vh;
+  overflow: hidden;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  & .swiper {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 .logo {
   padding: 0.5rem;
   height: 5rem;
@@ -68,13 +88,18 @@
   display: inline-block;
   position: absolute;
   top: 0;
-  left: 5rem;
+  left: 8rem;
   background-color: white;
   img {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
+}
+/* Add this to your CSS file */
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+  color: #777777 !important; /* Use !important if necessary */
 }
 
 @media screen and (max-width: 768px) {
