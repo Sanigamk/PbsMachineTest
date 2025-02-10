@@ -11,6 +11,14 @@
   top: 5rem;
   right: 5rem;
   z-index: 100000001;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .nav-bg {
@@ -23,6 +31,13 @@
   z-index: 100000000;
   transition: transform 0.5s ease-in-out;
   border-radius: 50%;
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .nav-contents {
@@ -38,6 +53,14 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .nav-content {
@@ -50,6 +73,14 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 /* From Uiverse.io by Cevorob */

@@ -32,8 +32,19 @@
     color: #dfa01e;
     font-size: 1rem;
     font-weight: 300;
-    display: inline-block;
+    display: flex;
     padding-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+
+    & div {
+      height: 1px;
+      width: 3rem;
+      margin-top: 0.5rem;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      background-color: #dfa01e;
+    }
 
     @media (max-width: 768px) {
       font-size: 0.9rem;

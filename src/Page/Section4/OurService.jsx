@@ -157,7 +157,9 @@ function OurService() {
   return (
     <div className="services-section">
       <div className="services-header">
-        <span className="services-header-subtitle">OUR SERVICES</span>
+        <span className="services-header-subtitle">
+          <div></div>OUR SERVICES<div></div>
+        </span>
         <h2 className="services-header-title">Quality construction services</h2>
       </div>
       <div className="services-grid">

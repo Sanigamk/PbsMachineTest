@@ -150,7 +150,7 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10rem;
-  padding: 5rem 8rem;
+  padding: 2rem 8rem;
   margin-bottom: 5rem;
 }
 @media (max-width: 1200px) {
@@ -469,8 +469,18 @@ a {
   color: #dfa01e;
   font-size: 1rem;
   font-weight: 300;
-  display: inline-block;
+  display: flex;
   padding-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.services-header-subtitle div {
+  height: 1px;
+  width: 3rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  background-color: #dfa01e;
 }
 @media (max-width: 768px) {
   .services-header-subtitle {
@@ -820,7 +830,8 @@ a {
 }
 @media (max-width: 480px) {
   .footer-header-content p {
-    margin-left: 4rem;
+    margin-left: 1rem;
+    font-size: 0.5rem;
   }
 }
 .footer-header-button {
@@ -1481,6 +1492,7 @@ a {
 @media (max-width: 480px) {
   .hero-header-container-contact {
     gap: 3px;
+    font-size: 6px;
   }
 }
 .hero-header-meadia {
@@ -1540,7 +1552,7 @@ a {
   color: white;
   font-size: 2.5rem;
   letter-spacing: 0.3rem;
-  width: 50rem;
+  width: 45rem;
   font-weight: 100;
 }
 @media (max-width: 1200px) {
@@ -1812,7 +1824,7 @@ a {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  margin-bottom: 10rem;
+  margin-bottom: 7rem;
 }
 @media (max-width: 1200px) {
   .section-five {
@@ -2016,7 +2028,7 @@ a {
 }
 @media (max-width: 480px) {
   .section-five-blue-box h2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -2058,6 +2070,16 @@ a {
   right: 5rem;
   z-index: 100000001;
 }
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .nav {
+    display: none;
+  }
+}
 
 .nav-bg {
   background: radial-gradient(circle at center, #404040, #000000);
@@ -2069,6 +2091,16 @@ a {
   z-index: 100000000;
   transition: transform 0.5s ease-in-out;
   border-radius: 50%;
+}
+@media (max-width: 768px) {
+  .nav-bg {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .nav-bg {
+    display: none;
+  }
 }
 
 .nav-contents {
@@ -2085,6 +2117,16 @@ a {
   justify-content: space-between;
   flex-direction: column;
 }
+@media (max-width: 768px) {
+  .nav-contents {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .nav-contents {
+    display: none;
+  }
+}
 
 .nav-content {
   width: 100%;
@@ -2096,6 +2138,16 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+@media (max-width: 768px) {
+  .nav-content {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .nav-content {
+    display: none;
+  }
 }
 
 /* From Uiverse.io by Cevorob */

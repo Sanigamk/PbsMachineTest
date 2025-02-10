@@ -6,6 +6,7 @@ function PbsFirst() {
       <div className="about-content">
         <h4 className="small-title" style={{ marginBottom: "1rem" }}>
           <span>AT A GLANCE</span>
+          <div></div>
         </h4>
         <h2>Perfect Building Solutions LLP</h2>
         <p>

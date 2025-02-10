@@ -8,7 +8,7 @@ export default function Stats() {
       </div>
       <div className="stats-content">
         <div className="stats-content-header">
-          <h4 className="small-title">
+          <h4 className="small-title" style={{ marginBottom: "0.5rem" }}>
             <span>AT A GLANCE</span>
             <div></div>
           </h4>
