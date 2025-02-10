@@ -5,6 +5,26 @@
   position: relative;
   margin-bottom: 10rem;
 
+  @media (max-width: 1200px) {
+    height: 32rem;
+    margin-bottom: 8rem;
+  }
+
+  @media (max-width: 992px) {
+    height: 30rem;
+    margin-bottom: 6rem;
+  }
+
+  @media (max-width: 768px) {
+    height: 28rem;
+    margin-bottom: 5rem;
+  }
+
+  @media (max-width: 480px) {
+    height: 25rem;
+    margin-bottom: 4rem;
+  }
+
   &-content {
     height: 100%;
     width: 100%;
@@ -19,6 +39,26 @@
       justify-content: flex-end;
       align-items: center;
       padding: 0 10rem;
+
+      @media (max-width: 1200px) {
+        padding: 0 8rem;
+        height: 10rem;
+      }
+
+      @media (max-width: 992px) {
+        padding: 0 6rem;
+        height: 9rem;
+      }
+
+      @media (max-width: 768px) {
+        padding: 0 4rem;
+        height: 8rem;
+      }
+
+      @media (max-width: 480px) {
+        padding: 0 2rem;
+        height: 7rem;
+      }
     }
 
     &-body {
@@ -28,6 +68,22 @@
       position: relative;
       z-index: 20;
       padding: 0 5rem !important;
+
+      @media (max-width: 1200px) {
+        padding: 0 4rem !important;
+      }
+
+      @media (max-width: 992px) {
+        padding: 0 3rem !important;
+      }
+
+      @media (max-width: 768px) {
+        padding: 0 2rem !important;
+      }
+
+      @media (max-width: 480px) {
+        padding: 0 1rem !important;
+      }
 
       &-item {
         height: 100%;
@@ -55,14 +111,33 @@
     gap: 1rem;
     padding: 1rem;
 
+    @media (max-width: 768px) {
+      gap: 0.75rem;
+      padding: 0.75rem;
+    }
+
+    @media (max-width: 480px) {
+      gap: 0.5rem;
+      padding: 0.5rem;
+    }
+
     &-buildname {
       color: #105689;
       font-weight: 500;
+
+      @media (max-width: 768px) {
+        font-size: 0.9rem;
+      }
     }
 
     &-location {
       display: flex;
       gap: 0.5rem;
+
+      @media (max-width: 768px) {
+        gap: 0.3rem;
+        font-size: 0.9rem;
+      }
     }
   }
 
@@ -76,30 +151,69 @@
     padding-left: 10rem;
     padding-top: 3rem;
 
+    @media (max-width: 1200px) {
+      width: 45rem;
+      padding-left: 8rem;
+      padding-top: 2.5rem;
+    }
+
+    @media (max-width: 992px) {
+      width: 40rem;
+      padding-left: 6rem;
+      padding-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      padding-left: 4rem;
+      padding-top: 1.5rem;
+    }
+
+    @media (max-width: 480px) {
+      padding-left: 2rem;
+      padding-top: 1rem;
+    }
+
     & h2 {
       color: white;
       font-size: 2.2rem;
       font-weight: 600;
+
+      @media (max-width: 1200px) {
+        font-size: 2rem;
+      }
+
+      @media (max-width: 992px) {
+        font-size: 1.8rem;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 1.6rem;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 1.4rem;
+      }
     }
   }
 }
+
 .swiper-two {
   padding: 0 5rem !important;
-}
-// /* Add this to your CSS file or within a <style> tag in your component */
-// .swiper-two .swiper-button-next,
-// .swiper-two .swiper-button-prev {
-//   color: #dfa01e; /* Change the color of the buttons */
-//   background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
-//   border-radius: 50%; /* Make the buttons circular */
-//   width: 40px; /* Set the width */
-//   height: 40px; /* Set the height */
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
 
-// .swiper-two .swiper-button-next:hover,
-// .swiper-two .swiper-button-prev:hover {
-//   background-color: rgba(0, 0, 0, 0.8); /* Darken the background on hover */
-// }
+  @media (max-width: 1200px) {
+    padding: 0 4rem !important;
+  }
+
+  @media (max-width: 992px) {
+    padding: 0 3rem !important;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 2rem !important;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 1rem !important;
+  }
+}

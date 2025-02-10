@@ -7,6 +7,25 @@
   padding-right: 0rem;
   width: 100%;
 
+  @media (max-width: 1200px) {
+    padding: 0 6rem;
+    gap: 3rem;
+  }
+
+  @media (max-width: 992px) {
+    padding: 0 4rem;
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 2rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 1.5rem;
+  }
+
   &-content {
     width: 100%;
 
@@ -25,6 +44,10 @@
         margin-left: 0.5rem;
         background-color: #dfa01e;
       }
+
+      @media (max-width: 768px) {
+        font-size: 0.9rem;
+      }
     }
 
     &-title {
@@ -33,12 +56,28 @@
       font-weight: bold;
       margin-bottom: 1.5rem;
       color: #235ab3;
+
+      @media (max-width: 992px) {
+        font-size: 1.75rem;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 1.5rem;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 1.25rem;
+      }
     }
 
     &-description {
       color: #4b5563;
       margin-bottom: 2rem;
       line-height: 1.6;
+
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
     }
 
     &-services {
@@ -94,21 +133,8 @@
     background-size: cover;
     background-position: center;
 
-    // img {
-    //   &-img-container {
-    //     border-top-right-radius: 15rem;
-    //     background-image: linear-gradient(
-    //         to right,
-    //         rgba(0, 0, 0, 0.1),
-    //         rgba(0, 0, 0, 0.2)
-    //       ),
-    //       url("../../../src/assets/intro-tmb/intro-tmb.png");
-    //     background-size: cover;
-    //     background-position: center;
-    //   }
-    //   @media (max-width: 768px) {
-    //     height: 300px;
-    //   }
-    // }
+    @media (max-width: 992px) {
+      height: 300px;
+    }
   }
 }

@@ -5,6 +5,17 @@
   gap: 4rem;
   overflow: hidden;
   width: 90%;
+
+  @media (max-width: 1200px) {
+    gap: 3rem;
+    height: auto;
+  }
+
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
   &-img-container {
     border-top-right-radius: 8rem;
     background-image: linear-gradient(
@@ -16,14 +27,30 @@
     background-size: cover;
     background-position: center;
 
-    // Play button styles
+    @media (max-width: 992px) {
+      height: 25rem;
+      border-top-right-radius: 4rem;
+    }
+
+    @media (max-width: 480px) {
+      height: 20rem;
+      border-top-right-radius: 2rem;
+    }
   }
 
   &-content {
+    @media (max-width: 768px) {
+      padding: 1rem;
+    }
     &-header {
       background-color: rgb(255, 255, 255);
       height: 10rem;
       padding-top: 3rem;
+
+      @media (max-width: 768px) {
+        height: auto;
+        padding-top: 2rem;
+      }
     }
 
     &-body {
@@ -31,6 +58,7 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
+
       &-item {
         height: fit-content;
         margin-bottom: 2rem;
@@ -40,15 +68,41 @@
           font-weight: 400;
           letter-spacing: 0.3rem;
           color: #dfa01e;
+
+          @media (max-width: 1200px) {
+            font-size: 2.5rem;
+          }
+
+          @media (max-width: 768px) {
+            font-size: 2rem;
+          }
+
+          @media (max-width: 480px) {
+            font-size: 1.8rem;
+          }
         }
       }
     }
   }
 }
+
 .prime-title {
   font-size: 36px;
   color: #105689;
+
+  @media (max-width: 992px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 26px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 22px;
+  }
 }
+
 .small-title {
   font-size: 1rem;
   font-weight: 300;
@@ -57,12 +111,18 @@
   align-items: center;
   justify-content: start;
   gap: 0.5rem;
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
+
   & div {
     height: 1px;
     width: 2rem;
     background-color: #dfa01e;
   }
 }
+
 .line {
   height: 2px;
   background-color: #105689;
