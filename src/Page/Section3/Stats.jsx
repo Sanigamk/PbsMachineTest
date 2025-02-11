@@ -1,6 +1,19 @@
+import { motion, useInView } from "framer-motion";
+import CountUp from "react-countup";
+import { useRef } from "react";
+
 export default function Stats() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { triggerOnce: false, amount: 0.5 });
+
   return (
-    <div className="stats">
+    <motion.div
+      ref={ref}
+      className="stats"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
       <div className="stats-img-container">
         <div className="play-button">
           <div className="play-icon"></div>
@@ -15,28 +28,33 @@ export default function Stats() {
           <h2 className="prime-title">Building with excellence</h2>
         </div>
         <div className="stats-content-body">
-          <div className="stats-content-body-item">
-            <h4>28+ </h4>
-            <div className="line"></div>
-            <p>Completed Projects</p>
-          </div>
-          <div className="stats-content-body-item">
-            <h4>15+</h4>
-            <div className="line"></div>
-            <p>Years of Experience</p>
-          </div>
-          <div className="stats-content-body-item">
-            <h4>5+</h4>
-            <div className="line"></div>
-            <p>Regional Offices</p>
-          </div>
-          <div className="stats-content-body-item">
-            <h4>200+</h4>
-            <div className="line"></div>
-            <p>Team Members</p>
-          </div>
+          {[
+            { value: 28, label: "Completed Projects" },
+            { value: 15, label: "Years of Experience" },
+            { value: 5, label: "Regional Offices" },
+            { value: 200, label: "Team Members" },
+          ].map((item, index) => (
+            <motion.div
+              key={index}
+              className="stats-content-body-item"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: index * 0.2 }}
+            >
+              <h4>
+                {isInView ? (
+                  <CountUp start={0} end={item.value} duration={2} />
+                ) : (
+                  item.value
+                )}
+                +
+              </h4>
+              <div className="line"></div>
+              <p>{item.label}</p>
+            </motion.div>
+          ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
